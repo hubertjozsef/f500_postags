@@ -4,7 +4,7 @@ import plotly.express as px
 
 @st.cache_data
 def load_data():
-    df = pd.read_parquet("pos_tag.parquet")
+    df = pd.read_parquet("pos_tag_dist_by_domain.parquet")
     return df
 
 df = load_data()
